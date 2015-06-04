@@ -1,7 +1,7 @@
 <?php
 /*
  * Author: Bayu Aditya H. <b@yuah.web.id>
- * Copyright: 2014 - 2015
+ * Copyright: 2015
  * Licence: see LICENCE.txt
  */
 

@@ -11,10 +11,10 @@ Installation
 
 Just put this in root directory.
 
-Make sure you edit your hosts file. It's located in c:\Windows\System32\drivers\etc\hosts on Windows system or /etc/hosts on Gnu/Linux system.
+Make sure you edit your hosts file. It's located in `c:\Windows\System32\drivers\etc\hosts` on Windows system or `/etc/hosts` on Gnu/Linux system.
 
 ```
-ip_address_of_yor_server skins.minecraft.net
+ip_address_of_your_server skins.minecraft.net
 ```
 
 Change logs
