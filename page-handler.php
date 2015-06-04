@@ -42,11 +42,21 @@ if(empty($directory)){
 		case "minecraftcloaks":
 			$file_location="{$CLOAKS_DIR}/{$file}";
 			$url="{$MAINSERVER_IP}/".stripslashes("{$SKINS_DIR}/{$file}");
+			
 		break;
 	};
 	
+	// If base directory doesn't exists.
+	if(!file_exists(dirname($file_location))){
+		$status=mkdir(dirname($file_location), 0777, true);
+		if(!$status){
+			http_header::fail_header("Failed to create file directory.");
+			exit;
+		}
+	};
+	
 	// Check if file is exists in the local dir.
-	if(!file_exists("$file_location")){
+	if(!file_exists($file_location)){
 		// Request to main server.
 		$ch = curl_init($url);
 		$fp = fopen($file_location, 'wb');
