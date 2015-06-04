@@ -1,0 +1,113 @@
+/*
+ * Miraki CSS.
+ */
+body, p, label {
+	font-family:Arial;
+	font-size:14px;
+	line-height:180%;
+	text-align:left;
+}
+a{
+	color:#00A0B0;
+}
+#mainwrapper{
+	width:576px;
+	margin:0 auto 0 auto;
+}
+p{
+	width:100%;
+}
+label{
+	float:left;
+}
+h1 {
+	text-align:left;
+	font-size:30px;
+	line-height:normal;
+	color:#0068B1
+}
+.clear{
+	clear:both;
+}
+p.subtitle{
+	text-align:left;
+	font-size:14px;
+	line-height:normal;
+	color:#0068B1;
+}
+p.attention{
+	background-color:rgb(250, 240, 240);
+	padding:0.25em 0.5em;
+	margin:0.5em 0em;
+}
+#mainbody {
+	width:100%;
+	display:block;
+	padding-top:5em
+}
+strong.title{
+	font-size:150%;
+}
+div.formstyle{
+	width: 100%;
+	height: 20px;
+	margin: 40px auto;
+}
+div.formstyle .input_form {
+	width: 100%;
+	height: 20px;
+	border: 1px solid #BBB;
+	color: #888;
+	padding: 5px;
+	
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	
+	outline: none;
+}
+div.formstyle .input_form[type="file"]{
+	cursor:pointer;
+}
+div.formstyle .submit_form {
+	width: 100%;
+	height: 20px;
+	border: 1px solid #BBB;
+	color: #888;
+	padding: 5px;
+	
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	
+	outline: none;
+	
+	cursor:pointer;
+}
+
+@media only screen and (max-device-width: 768px) {
+	#mainwrapper{
+		width:75%;
+	}
+	#mainbody {
+		display:block;
+		padding-top:3em
+	}
+}
+@media only screen and (max-device-width: 360px) {
+	#mainbody {
+		width:90%;
+		display:block;
+		padding-top:1em
+	}
+}
